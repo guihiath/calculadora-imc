@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora IMC</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container__calculadora">
+      <ul class="lista">
+        <h1 class="texto__calculadora">CALCULADORA IMC</h1>
+        <hr />
+        <li class="lista__calculadora">
+          <p class="nome__calculadora">Nome:</p>
+          <input id="input__nome" type="text" placeholder="Digite seu nome" />
+        </li>
+        <li class="lista__calculadora">
+          <p class="nome__calculadora">Altura:</p>
+          <input
+            id="input__altura"
+            type="number"
+            placeholder="Digite sua altura"
+          />
+        </li>
+        <li class="lista__calculadora">
+          <p class="nome__calculadora">Peso:</p>
+          <input id="input__peso" type="number" placeholder="Digite seu peso" />
+        </li>
+        <li class="lista__botao">
+          <button id="botao">Calcular</button>
+        </li>
+        <li id="resultado"></li>
+      </ul>
+      <img
+        class="imagem__calculadora"
+        src="/img/Fitness tracker-rafiki.svg"
+        alt="imagem fitness"
+      />
+    </div>
+  </body>
+</html>
+
+<script src="script.js"></script>

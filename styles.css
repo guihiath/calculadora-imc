@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  top: 0;
+}
+
+:root {
+  --fonte-principal: "Protest Strike", sans-serif;
+  --fonte-secundaria: "Oswald", sans-serif;
+}
+
+.texto__calculadora {
+  font-family: var(--fonte-principal);
+  color: white;
+  font-size: 25px;
+}
+
+.container__calculadora {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.lista {
+  list-style: none;
+  padding: 40px;
+  border-radius: 10px;
+  background-color: #407bff;
+}
+
+.lista__calculadora {
+  padding: 20px;
+}
+
+.nome__calculadora {
+  font-family: var(--fonte-secundaria);
+  font-weight: 600;
+  color: white;
+}
+
+.imagem__calculadora {
+  width: 50vh;
+  height: 50vh;
+}
+
+.lista__botao {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+}
+
+#botao {
+  border-radius: 5px;
+  font-family: var(--fonte-principal);
+  font-weight: 700;
+  padding: 10px 10px;
+  font-size: 15px;
+  text-transform: uppercase;
+}
+
+#resultado {
+  font-family: var(--fonte-principal);
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 40px;
+  color: white;
+  text-transform: uppercase;
+}
+
+@media only screen and (max-width: 600px) {
+  .imagem__calculadora {
+    display: none;
+  }
+
+  .container__calculadora {
+    width: 100%;
+  }
+}
